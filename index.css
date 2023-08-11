@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+}
+
+#root {
+    height: 100%;
+}
+
+.content {
+    padding: 30px;
+}
+
+.CodeMirror {
+    height: 90%;
+    overflow-y: auto;
+    font-size: 1.2rem;
+}
+
+.CodeMirror::-webkit-scrollbar, .CodeMirror *::-webkit-scrollbar {
+    width: 1px;
+    opacity: 0;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 100%;
+}
+
+.d-grid > div {
+    padding: 20px;
+}
+
+.d-grid > div:nth-of-type(1) {
+    border-right: solid 1px #ccc;
+    background: #fff;
+}
+
+.d-grid > div:nth-of-type(2) {
+    background: #fafafa;
+}
+
+.d-grid > div:nth-of-type(1) > .CodeMirror {
+    margin-top: 90px;
+}
+
+@media (max-width: 980px) {
+    .d-grid > div:nth-of-type(1) {
+        border-right: none;
+        border-bottom: solid 1px #ccc;
+    }
+    .d-grid > div {
+        margin: 0;
+        padding: 20px;
+    }
+    .d-grid > div:nth-of-type(2) {
+        border-top: solid 1px #ccc;
+        margin-top: 50px;
+    }
+    .d-grid {
+        margin: 0;
+    }
+    body, html {
+        overflow-y: auto;
+    }
+}
+
+a {
+    color: dodgerblue;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 900;
+}
+
+h1::before {
+    content: "# ";
+    color: grey;
+}
+
+h2::before {
+    content: "## ";
+    color: grey;
+}
+
+h3::before {
+    content: "### ";
+    color: grey;
+}
+
+h4::before {
+    content: "#### ";
+    color: grey;
+}
+
+h5::before {
+    content: "##### ";
+    color: grey;
+}
+
+h6::before {
+    content: "###### ";
+    color: grey;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marker - The Live Markdown Editor.">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <meta robots="index, follow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.css" integrity="sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Marker - The Live Markdown Editor.</title>
+</head>
+<body>
+    <div id="root">
+        <nav class="content">
+            <img src="./logo.png" alt="Marker Logo" height="35">
+        </nav>
+        <div class="d-grid">
+            <div>
+                <textarea># Hello world
+This is a test page.
+
+[Visit my GitHub](https://github.com/rodri-r-z/Marker)
+
+## Compatibility
+
+* Firefox 1.5 and 2.0
+* Chrome 12.0
+* Internet Explorer 6 and 7
+* Safari 2.0.4
+* Opera 8.54 and 9.10
+* Netscape 8.1.2
+* Konqueror 3.5.4
+</textarea>
+            </div>
+            <div id="markdownResult">
+            </div>
+        </div>
+    </div>
+    <script src="  https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.js" integrity="sha512-t5Lcu24FbQybGnoIbv1GXDx633tW0Hd4reBUx74EIq/2Q39FzskADNbjc605pQA9kkojC+8bRXhHKEXoKJs3rw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/mode/markdown/markdown.min.js" integrity="sha512-hWWnV/2mjf6CrB3SNlXasyH32fk8LjkVmnnhxX4cWdYPMzso+e5UK0h5M2cUlAYUA676nluLPKARmZBScJip5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
