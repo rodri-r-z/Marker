@@ -4,7 +4,7 @@ The Live Markdown Editor.
                     
 **How to use**
                     
-Enter [GitHub Pages](https://rodri-r-z.github.io/Timer/).
+Enter [GitHub Pages](https://rodri-r-z.github.io/Marker/).
                     
 **LICENSE**
                     
